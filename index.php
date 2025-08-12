@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolioApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Leander Chris Dsouza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+<body ng-controller="MainController">
+  <div class="navbar">
+    <a href="index.php">Home</a>
+    <a href="backend/skills.php" target="_blank">Skills</a>
+    <a href="backend/experience.php" target="_blank">Experience</a>
+    <a href="backend/projects.php" target="_blank">Projects</a>
+    <a href="backend/certifications.php" target="_blank">Certifications</a>
+    <a href="backend/contact.php" target="_blank">Contact</a>
+    <div id="google_translate_element" style="float: right; padding: 10px;"></div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="main-content">
+    <div class="container">
+      <h4>Professional Summary</h4>
+      <p>I am Leander Chris Dsouza, an MCA student in Data Science with one month of hands-on experience in data analysis and visualization. Applied Python-based analytics, contributing to data-driven decision-making. Passionate about solving business challenges with technical expertise.</p>
+
+      <div class="container mt-4">
+        <h4 class="mb-3">Welcome to my Portfolio</h4>
+        <p>This portfolio showcases my technical journey in programming, data analytics, and modern web development.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/angular@1.8.3/angular.min.js"></script>
+  <script src="frontend/js/index.js"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
