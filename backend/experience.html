@@ -4,38 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Leander Chris Dsouza</title>
+  <title>Experience - Leander Chris Dsouza</title>
   <link rel="stylesheet" href="../frontend/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 
-<body ng-controller="ContactController">
-<nav class="navbar" role="navigation" aria-label="Main navigation">
-    <a href="../index.php">Home</a>
-    <a href="skills.php">Skills</a>
-	<a href="experience.php">Experience</a>
-    <a href="projects.php">Projects</a>
-    <a href="certifications.php">Certifications</a>
-    <a href="contact.php">Contact</a>
+<body ng-controller="ExperienceController">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="../index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
     <div id="google_translate_element" style="float: right; padding: 10px;"></div>
   </nav>
 
   <br><br><br><br><br><br><br><br><br><br>
   <div class="main-content">
     <div class="container">
-      <h4>Contact Me</h4>
-	  <br>
-      <p><strong>Email:</strong> {{ contact.email }}</p>
-	  <br>
-      <p><strong>Phone:</strong> {{ contact.phone }}</p>
-	  <br>
-      <p><strong>LinkedIn:</strong> <a ng-href="{{ contact.linkedin }}" target="_blank">{{ contact.linkedin }}</a></p>
-	  <br>
-      <p><strong>GitHub:</strong> <a ng-href="{{ contact.github }}" target="_blank">{{ contact.github }}</a></p>
+      <h4>Experience</h4>
+      <br>
+      <div ng-repeat="exp in experiences" style="margin-bottom: 20px;">
+        <strong>{{ $index + 1 }}. {{ exp.title }}</strong><br><br>
+        {{ exp.duration }}<br><br>
+        {{ exp.description }}<br><br>
+        <a ng-href="{{ exp.pdf }}" target="_blank" style="color: lightblue;">View Certificate (PDF)</a>
+      </div>
     </div>
   </div>
+
   <script src="https://unpkg.com/angular@1.8.3/angular.min.js"></script>
-  <script src="../frontend/js/contact.js"></script>
+  <script src="../frontend/js/experience.js"></script>
+
   <!-- Google Translate -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
@@ -49,3 +50,4 @@
 </body>
 
 </html>
+
