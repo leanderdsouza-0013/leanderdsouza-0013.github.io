@@ -13,6 +13,10 @@ app.controller('CertificationsController', function($scope) {
     {
       title: "Excel for Project & Financial Management",
       description: "Project Management Tracker, Budget Creation, Financial Statement Creation"
+    },
+    {
+      title: "Artificial Intelligence",
+      description: "Be10x AI Tools Workshop"
     }
   ];
 });
